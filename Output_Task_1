@@ -1,0 +1,7 @@
+==============================
+Source IP      : 20.42.65.94
+Destination IP : 192.168.29.142
+Protocol        : TCP
+Source Port     : 443
+Destination Port: 65182
+Payload Length  : 32 bytes
