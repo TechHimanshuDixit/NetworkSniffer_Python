@@ -1,89 +1,82 @@
-## 🛡️ Network Packet Sniffer
+# 🕵️‍♂️ Network Sniffer using Python
 
-This repository contains **Task 1** of the **CodeAlpha CyberSecurity Internship**, developed by **Himanshu Dixit**.  
-The task involves creating a simple **Network Packet Sniffer** using Python and the `scapy` library.
+A lightweight Python-based packet sniffer that captures and analyzes network traffic. This project demonstrates raw socket programming and basic packet inspection techniques.
 
----
+## 🚀 Features
 
-## 📁 Project Structure
+- Capture real-time network packets
+- Parse and display Ethernet, IP, TCP, UDP, and ICMP headers
+- Hexdump view of raw packet data
+- Console-based interface
 
-CodeAlpha_CyberSecurity/ ├── Task_1/                # Contains the source code │   └── sniffer.py         # Python script to sniff and analyze network packets ├── Output_Task_1/        # Contains the output result of a sample packet sniffing session │   └── output.txt
+## 🧠 Skills Demonstrated
 
----
+- Raw socket programming in Python
+- Understanding of OSI and TCP/IP models
+- Binary and hex data parsing
+- Network protocol structure (Ethernet, IP, TCP/UDP/ICMP)
 
-## 🧠 Features
+## ⚙️ Technologies Used
 
-- Captures network packets in real-time.
-- Extracts and displays:
-  - Source and Destination IP addresses
-  - Protocol type (TCP, UDP, ICMP, etc.)
-  - Source and Destination ports
-  - Payload size in bytes
-- Identifies and classifies IP layer protocols.
+- Python (v3.6+)
+- `socket` module
+- `struct` module
+- Linux terminal
 
----
+> Note: This program requires administrative privileges to run.
 
-## 🚀 Getting Started
+## 📁 Folder Structure
 
-### 🔧 Requirements
+```
 
-Make sure you have the following installed:
+NetworkSniffer\_Python/
+├── sniffer.py         # Main packet sniffer script
+├── README.md          # Project documentation
+└── sample\_output.txt  # Sample output of a capture session
 
-- Python 3.x
-- `scapy` library
+````
 
-Install scapy using pip:
+## 🔧 How to Run
+
+1. Clone this repository:
 
 ```bash
-pip install scapy
+git clone https://github.com/TechHimanshuDixit/NetworkSniffer_Python.git
+cd NetworkSniffer_Python
+````
 
+2. Run the script with administrative privileges:
 
----
-
-🧪 How to Run
-
-Run the script with administrator/root privileges (required for packet sniffing):
-
+```bash
 sudo python3 sniffer.py
+```
 
-Once running, the script will continuously print packet information until you press Ctrl + C to stop it.
+> Use `Ctrl + C` to stop the sniffer.
 
+## 📌 Sample Output
 
----
+```
+Ethernet Frame:
+  - Destination: 08:00:27:13:69:77
+  - Source:      08:00:27:89:3f:1a
+  - Protocol:    0x0800 (IPv4)
 
-🖥️ Sample Output
+IPv4 Packet:
+  - Version: 4
+  - Header Length: 20 bytes
+  - TTL: 64
+  - Protocol: TCP
+  - Source IP: 192.168.0.105
+  - Target IP: 172.217.167.206
+```
 
-==============================
-Source IP         : 20.42.65.94  
-Destination IP    : 192.168.29.142  
-Protocol          : TCP  
-Source Port       : 443  
-Destination Port  : 65182  
-Payload Length    : 32 bytes
+## 📫 Contact
 
-
----
-
-📌 Notes
-
-You may need to run the script in a terminal with elevated privileges (admin/root).
-
-Use responsibly. Network sniffing should only be performed on networks you own or have permission to monitor.
-
-
-
----
-
-👨‍💻 Author
-
-Himanshu Dixit
-Intern at CodeAlpha
-
+📧 [himanshudixit2002@gmail.com](mailto:himanshudixit2002@gmail.com)
+🔗 [LinkedIn](https://linkedin.com/in/himanshudixit2002)
+🐙 [GitHub](https://github.com/TechHimanshuDixit)
 
 ---
 
-📄 License
+> ⚠️ **Disclaimer:** Use this tool only for educational and authorized testing purposes. Unauthorized network sniffing may be illegal.
 
-This project is licensed for educational purposes under the MIT License.
-
----
