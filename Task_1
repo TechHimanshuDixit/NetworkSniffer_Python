@@ -1,4 +1,4 @@
-# Network Packet Sniffer - CodeAlpha Internship Task 1
+# Network Packet Sniffer
 # Created by: Himanshu Dixit
 
 from scapy.all import sniff
